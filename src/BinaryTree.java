@@ -1,3 +1,4 @@
+import java.util.Iterator;
 /**
  *
  * @param <E> Parametro para la que la clase sea generica
