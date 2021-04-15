@@ -94,7 +94,7 @@ public class Main {
 
     private static void CadaPalabra(String[] no_traducido, StringBuilder res, BinarySearchTree bstfr) {
         for (String s : no_traducido) {
-            ComparableAssociation top = new ComparableAssociation(s);
+            ComparableAssociation top = new ComparableAssociation(s.toLowerCase());
             if (bstfr.contains(top)) {
                 BinaryTree dato = bstfr.locate(bstfr.root,top);
                 ComparableAssociation temp = (ComparableAssociation) dato.getValor();

@@ -5,9 +5,9 @@ public class Datos {
 
 
     public Datos(String[] data){
-        D1 = data[0];
-        D2 = data[1];
-        D3 = data[2];
+        D1 = data[0].toLowerCase();
+        D2 = data[1].toLowerCase();
+        D3 = data[2].toLowerCase();
     }
 
     public String getD(int i) {
