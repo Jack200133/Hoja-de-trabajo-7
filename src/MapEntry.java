@@ -1,3 +1,4 @@
+// interfas parea la calse de asociaciones
 public interface MapEntry<K,V> {
         public boolean equals (Object o);
         // post: returns true iff this entry <K,V> is equal to object o

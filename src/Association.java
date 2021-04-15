@@ -1,4 +1,5 @@
 import java.util.Map;
+// clase de asociacion para guardar los datos y poder asociarlos y comprarlos (basada ern la viste en clase)
 public class Association <K,V> implements MapEntry<K,V>{
 
 

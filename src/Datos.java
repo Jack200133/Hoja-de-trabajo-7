@@ -1,3 +1,4 @@
+// clse paraz mostrar los datos de una mejor manera
 public class Datos {
     String D1;
     String D2;

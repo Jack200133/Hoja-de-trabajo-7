@@ -1,4 +1,4 @@
-
+// asociacion que implementa comparable para la comparacion de datos (basada ern la viste en clase)
 public class ComparableAssociation<K extends Comparable<K>,V>
         extends Association<K,V>
         implements Comparable<ComparableAssociation<K,V>> {

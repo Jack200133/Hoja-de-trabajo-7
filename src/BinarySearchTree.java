@@ -1,5 +1,7 @@
 import java.util.Iterator;
 import java.util.Comparator;
+
+// BST basado en el proporcionado en clase y que recorre inorder el arbol para mostar los datos
 public class BinarySearchTree<E extends Comparable<E>> {
 
     protected BinaryTree<E> root;
