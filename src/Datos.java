@@ -10,6 +10,15 @@ public class Datos {
         D3 = data[2];
     }
 
+    public String getD(int i) {
+        return switch (i) {
+            case (1) -> D1;
+            case (2) -> D2;
+            default -> D3;
+        };
+
+    }
+
     @Override
     public String toString() {
         return "{" +
