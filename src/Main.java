@@ -8,6 +8,7 @@ public class Main {
         BinarySearchTree bstig = new BinarySearchTree();
         BinarySearchTree bstes = new BinarySearchTree();
         BinarySearchTree bstfr = new BinarySearchTree();
+        Scanner scan = new Scanner(System.in);
 
         try {
             File myObj = new File("diccionario.txt");
@@ -32,6 +33,53 @@ public class Main {
         System.out.println("Print INORDER de las traducciones");
         System.out.println("-----------------------------------");
         bstig.iterator();
+        System.out.println("-----------------------------------");
+
+        System.out.println("Ingrese que Idioma es el Texto");
+        System.out.println("1. Ingles");
+        System.out.println("2. Espanol");
+        System.out.println("3. Frances");
+        int op = scan.nextInt();
+        int op2= 0;
+        if(op == 1){
+            System.out.println("Ingrese que Idioma desea de salida");
+            System.out.println("2. Espanol");
+            System.out.println("3. Frances");
+            op2 = scan.nextInt();
+        }
+        else if(op == 2){
+            System.out.println("Ingrese que Idioma desea de salida");
+            System.out.println("1. Ingles");
+            System.out.println("3. Frances");
+            op2 = scan.nextInt();
+        } else if(op == 3){
+            System.out.println("Ingrese que Idioma desea de salida");
+            System.out.println("1. Ingles");
+            System.out.println("2. Espanol");
+            op2 = scan.nextInt();
+        }
+
+        try {
+            File myObj = new File("texto.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+                String data = myReader.nextLine();
+                String[] temp = data.split("\\.");
+                for (int i = 0; i < temp.length; i++) {
+                    traductor(temp[i]);
+                }
+            }
+            myReader.close();
+        }catch (Exception e) {
+            System.out.println("Archivo no encontrado");
+            e.printStackTrace();
+        }
+
+    }
+
+    public static void traductor(String oracion){
+        String[] No_traducido = oracion.split(" ");
+
 
     }
 }
