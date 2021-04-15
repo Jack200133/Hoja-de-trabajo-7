@@ -36,6 +36,7 @@ public class BinaryTree<E> {
         left = right = this;
     }
 
+
     /**
      * Constructor de un arbol sin hijos. El valor del nodo y subarboles son proporcionados
      * por el usuario
@@ -281,5 +282,20 @@ public class BinaryTree<E> {
         else s.append(" -");
         s.append('>');
         return s.toString();
+    }
+
+    public void inorderIterator(BinaryTree nood) {
+
+        if (nood.isEmpty())
+            return;
+
+        /* first recur on left child */
+        inorderIterator(nood.getLeft());
+
+        /* then print the data of node */
+        System.out.print(nood.getValor() + " ");
+
+        /* now recur on right child */
+        inorderIterator(nood.getRight());
     }
 }

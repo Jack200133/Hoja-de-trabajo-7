@@ -1,5 +1,5 @@
 import java.util.Map;
-public class Association <K,V>{
+public class Association <K,V> implements MapEntry<K,V>{
 
 
     protected K theKey; // the key of the key-value pair
@@ -32,7 +32,7 @@ public class Association <K,V>{
     }
 
 
-    public V getValue()
+    public V getValor()
     {
         return theValue;
     }
@@ -43,7 +43,7 @@ public class Association <K,V>{
         return theKey;
     }
 
-    public V setValue(V value)
+    public V setValor(V value)
     {
         V oldValue = theValue;
         theValue = value;
@@ -52,7 +52,7 @@ public class Association <K,V>{
 
     public String toString()
     {
-        return "<Association: " + getKey() + "=" + getValue() + ">";
+        return "<Association: " + getKey() + "=" + getValor() + ">";
     }
 }
 

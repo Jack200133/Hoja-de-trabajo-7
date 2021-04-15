@@ -194,10 +194,10 @@ public class BinarySearchTree<E extends Comparable<E>> {
         return null;
     }
 
-   /** public Iterator<E> iterator()
+    public void iterator()
     {
-        return root.inorderIterator();
-    }**/
+        root.inorderIterator(this.root);
+    }
 
     public int hashCode(){
         return root.hashCode();

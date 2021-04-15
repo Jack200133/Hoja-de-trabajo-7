@@ -1,4 +1,4 @@
-import java.util.Map;
+
 public class ComparableAssociation<K extends Comparable<K>,V>
         extends Association<K,V>
         implements Comparable<ComparableAssociation<K,V>> {
@@ -23,7 +23,7 @@ public class ComparableAssociation<K extends Comparable<K>,V>
 
     public String toString()
     {
-        return "<ComparableAssociation: " + getKey() + "=" + getValue() + ">";
+        return "<" + getKey() + "=" + getValor() + ">";
     }
 }
 

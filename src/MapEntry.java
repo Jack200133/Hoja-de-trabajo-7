@@ -11,7 +11,7 @@ public interface MapEntry<K,V> {
         public int hashCode();
         // post: returns the hashcode for the key
 
-        public V setValue(V value);
+        public V setValor(V value);
         // post: replaces the Value of this entry
 
 
